@@ -11,7 +11,7 @@ Algoritmo "Desafio.Bar"
 Var
 
    sexo : caractere
-   quantidade : inteiro
+   quantidade, senha : inteiro
    ingresso, couvert, comanda, ticketMen, ticketWoman : real
    bebida1, bebida2, comida1, cerveja, refri, espetinho : real
 
@@ -26,6 +26,22 @@ Inicio
    escreval()
 //////////////////// ENTRADA DE DADOS /////////////////////////////////////////
 //////// Digitar com INICIAL MAIÚSCULA ////////////////////////////////
+   escreva("Digite a senha de usuário: ")
+   leia(senha)
+   
+   enquanto (senha <> 10) e (senha <> 12) faca
+      escreva("Senha Inválida! Digite a senha novamente: ")
+      leia(senha)
+   fimenquanto
+   
+   se senha = 10 entao
+      escreval("Atendente: Clint Barton")
+      escreval
+   senao
+      escreval("Atendente: Carol Danvers")
+      escreval
+   fimse
+   
 
    escreva("Sexo: ")
    leia(sexo)
